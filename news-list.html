@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>瑞网中国 - 新闻</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/news-list.css">
         <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     </head>
     <body class="news-list">
@@ -15,10 +15,11 @@
                     </h1>
                     <div class="rw-search f-r">
                         <button type="button" id="search-btn">搜索</button>
-                        <div class="rw-sub-nav">
-                            <form action="">
-                                <input type="text" placeholder="搜索">
-                                <button type="submit">搜索</button>
+                        <div class="rw-btn-panel">
+                            <form action="" class="rw-container">
+                                <button type="submit" class="rw-search-btn">搜索</button>
+                                <input type="text" placeholder="搜索瑞网相关产品" class="rw-search-input" name="keywords">
+                                <button type="button" class="rw-search-close" id="search-close">搜索</button>
                             </form>
                         </div>
                     </div>
@@ -105,7 +106,8 @@
             </div>
         </div>
         <footer class="rw-footer">
-            <div class="rw-container">
+            <div class="rw-footer-lists rw-container clearfix">
+                <h3 class="rw-footer-logo">瑞网中国</h3>
                 <div class="rw-footer-list">
                     <h3>用户支持</h3>
                     <ul>
@@ -118,22 +120,17 @@
                 <div class="rw-footer-list">
                     <h3>关于我们</h3>
                     <ul>
-                        <li><a href="">关于德国/中国瑞网</a></li>
-                        <li><a href="">客户案例（国内）</a></li>
-                        <li><a href="">联系我们</a></li>
+                        <li><a href="">关于瑞网</a></li>
+                        <li><a href="">客户案例</a></li>
                     </ul>
                 </div>
+                <div class="rw-footer-400">
+                    <h3>400 客服电话</h3>
+                    <p>400-808-3136</p>
+                </div>
             </div>
-            <div class="rw-container clearfix">
-                <p class="f-r">
-                    <a href="">隐私条例</a>
-                    <a href="">使用条款</a>
-                    <a href="">用户咨询</a>
-                </p>
-            </div>
-            <p class="rw-container clearfix">
-                <span class="f-l">Copyright © 2015 Apple Inc. 保留所有权利。 使用条款 隐私政策更新</span>
-                <span class="f-r">京公安网安备 11010500896 京ICP备10214630</span>
+            <p class="rw-container rw-footer-rights">
+                Copyright © 2015 Apple Inc. 保留所有权利。 使用条款 隐私政策更新。&#x3000;&#x3000;<a href="">隐私条例</a>&ensp;<span>|</span>&ensp;<a href="">使用条款</a>&ensp;<span>|</span>&ensp;<a href="">用户咨询</a>
             </p>
         </footer>
         <script src="http://cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
