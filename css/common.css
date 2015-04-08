@@ -277,7 +277,7 @@
 
 /*---- Center title style end ∧ */
 
-/*---- Full header background image style ∨ */
+/*---- Full header background image container style ∨ */
 
 .rw-header-bg {
     left: 0;
@@ -290,7 +290,32 @@
     z-index: -1;
 }
 
-/*---- Full header background image style end ∧ */
+/*---- Full header background image container style end ∧ */
+
+/*---- Title bar style ∨ */
+
+.rw-title-bar {
+    border-left: 2px solid #fa5078;
+    padding: 0 0 0 14px;
+}
+
+.rw-title-bar > h2 {
+    font-size: 22px;
+    height: 24px;
+}
+
+.rw-title-bar > h3 {
+    font-size: 14px;
+    height: 16px;
+    padding: 2px 0 0;
+}
+
+.rw-title-bar small {
+    font-size: 16px;
+    margin: 0 0 0 20px;
+}
+
+/*---- Title bar style end ∧ */
 
 /*---- Footer style ∨ */
 
