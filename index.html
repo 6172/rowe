@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>瑞网中国 － 首页</title>
+        <link rel="stylesheet" href="css/rowe.css">
         <link rel="stylesheet" href="css/index.css">
+        <!--[if lt IE 9]>
         <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+        <![endif]-->
     </head>
     <body class="home-page">
         <header class="rw-header">
@@ -68,22 +71,30 @@
                 </nav>
             </div>
             <div class="rw-header-bg">
-                <img src="images/head1.jpg" class="bg-img">
-                <img src="images/head2.jpg" class="bg-img">
-                <img src="images/head.jpg" class="bg-img">
+                <div class="rw-header-bg-wrap" id="rw-header-bg-wrap">
+                    <figure>
+                        <img src="images/head2.jpg" class="bg-img on">
+                    </figure>
+                    <figure>
+                        <img src="images/head1.jpg" class="bg-img">
+                    </figure>
+                    <figure>
+                        <img src="images/head.jpg" class="bg-img">
+                    </figure>
+                </div>
             </div>
             <div class="rw-header-bg-btns">
-                <a class="rw-header-btn" href="">立刻查看</a>
-                <a class="rw-header-btn" href="">立刻查看</a>
-                <a class="rw-header-btn" href="">立刻查看</a>
+                <a class="rw-header-btn on" href="http://baidu.com">立刻查看</a>
+                <a class="rw-header-btn" href="http://soso.com">立刻查看</a>
+                <a class="rw-header-btn" href="http://360.cn">立刻查看</a>
             </div>
             <div class="rw-slider">
-                <div class="rw-container">
-                    <figure class="rw-slider-thumb"><img data-src="http://placehold.it/247x111" alt=""></figure>
-                    <figure class="rw-slider-thumb"><img data-src="http://placehold.it/247x111" alt=""></figure>
-                    <figure class="rw-slider-thumb"><img data-src="http://placehold.it/247x111" alt=""></figure>
-                    <a href="javascript:void(0);" class="rw-slider-prev"><</a>
-                    <a href="javascript:void(0);" class="rw-slider-next">></a>
+                <div class="rw-container" id="rw-slider">
+                    <figure class="rw-slider-thumb on" data-index="0"><img src="http://placehold.it/247x111" alt=""></figure>
+                    <figure class="rw-slider-thumb" data-index="1"><img src="http://placehold.it/247x111" alt=""></figure>
+                    <figure class="rw-slider-thumb" data-index="2"><img src="http://placehold.it/247x111" alt=""></figure>
+                    <a href="javascript:void(0);" class="rw-slider-prev">上一张</a>
+                    <a href="javascript:void(0);" class="rw-slider-next">下一张</a>
                 </div>
             </div>
         </header>
@@ -96,11 +107,11 @@
                 		</header>
                 		<div class="clearfix">
                 			<figure class="rw-view-pdt-new-item f-l">
-                				<img src="">
+                				<img src="http://placehold.it/330x210">
                 				<h3><a href="">为满足商务按需印刷和高负载文印需求，量身定制的全新彩色数码打印解决方案。</a></h3>
                 			</figure>
                 			<figure class="rw-view-pdt-new-item f-l">
-                				<img src="">
+                				<img src="http://placehold.it/330x210">
                 				<h3><a href="">为满足商务按需印刷和高负载文印需求，量身定制的全新彩色数码打印解决方案。</a></h3>
                 			</figure>
                 		</div>
@@ -128,25 +139,29 @@
                 		<div class="rw-view-news-head rw-view-news-articles f-l">
                 			<img src="http://placehold.it/484x240">
                 			<h3><a href="">微软在纳德拉带领下利润空间受打压 华尔街担忧</a></h3>
-                			<p>13/4</p>
+                			<time class="">13/4</time>
                 			<p>3月25日消息，据《福布斯》报道，萨蒂亚·纳德拉（Satya Nadella）执掌微软后，迅速扭转了前任CEO史蒂夫·鲍尔默（Steve Ballmer）曾留给华尔街的印象——权威人士和分析师们在过去几个月里都纷纷为新微软喝彩  ...</p>
                 		</div>
                 		<div class="rw-view-news-other f-r">
                 			<div class="rw-view-news-articles">
-                                <img src="">
-                                <h3><a href="">传工信部要求全面开放存量基站</a></h3><p>12/03</p>
+                                <img src="http://placehold.it/230x120">
+                                <h3><a href="">传工信部要求全面开放存量基站</a></h3>
+                                <time class="">12/03</time>
                             </div>
                 			<div class="rw-view-news-articles">
-                                <img src="">
-                                <h3><a href="">传工信部要求全面开放存量基站</a></h3><p>12/03</p>
+                                <img src="http://placehold.it/230x120">
+                                <h3><a href="">传工信部要求全面开放存量基站</a></h3>
+                                <time class="">12/03</time>
                             </div>
                 			<div class="rw-view-news-articles">
-                                <img src="">
-                                <h3><a href="">传工信部要求全面开放存量基站</a></h3><p>12/03</p>
+                                <img src="http://placehold.it/230x120">
+                                <h3><a href="">传工信部要求全面开放存量基站</a></h3>
+                                <time class="">12/03</time>
                             </div>
                 			<div class="rw-view-news-articles">
-                                <img src="">
-                                <h3><a href="">传工信部要求全面开放存量基站</a></h3><p>12/03</p>
+                                <img src="http://placehold.it/230x120">
+                                <h3><a href="">传工信部要求全面开放存量基站</a></h3>
+                                <time class="">12/03</time>
                             </div>
                 		</div>
                 	</div>
@@ -181,7 +196,7 @@
                 Copyright © 2015 Apple Inc. 保留所有权利。 使用条款 隐私政策更新。&#x3000;&#x3000;<a href="">隐私条例</a>&ensp;<span>|</span>&ensp;<a href="">使用条款</a>&ensp;<span>|</span>&ensp;<a href="">用户咨询</a>
             </p>
         </footer>
-        <script src="js/jquery.min.js"></script>
+        <script src="http://cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
