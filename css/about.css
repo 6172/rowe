@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/*-------- News List */
+
+.rw-body {
+    background-color: #f7f8f9;
+}
+
+.rw-body > .rw-container {
+    background-color: #fff;
+}
+
+.about-us > .rw-header {
+    height: 330px;
+}
+
+.rw-about-wrap {
+    padding: 42px 27px 150px;
+    position: relative;
+}
+
+.rw-about-nav {
+    line-height: 40px;
+    position: absolute;
+    right: 34px;
+    top: 42px;
+}
+
+.rw-about-nav li {
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.rw-about-nav .on {
+    font-weight: normal;
+}
+
+.rw-about-detail {
+    display: none;
+}
+
+.nav-about-content > .on {
+    display: block;
+}
+
+.rw-about-detail > div {
+    padding: 48px 0 0;
+}
+
+.rw-about-detail > h2 {
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 0 0 11px;
+}
+
+.rw-about-detail p {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0 0 25px;
+    text-align: justify;
+}
+
+.rw-about-detail-aboutus > .content {
+    margin: 0 64px 0 0;
+    width: 630px;
+}
+
+.rw-about-detail-aboutus > .contact {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.rw-about-detail-aboutus > .contact > dd {
+    color: #cc0000;
+    margin: 0 0 24px;
+}
+
+.rw-about-detail-cases > figure {
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 0 30px;
+    overflow: hidden;
+    text-align: center;
+    width: 315px;
+}
+
+.rw-about-detail-cases img {
+    vertical-align: middle;
+}
+
+.rw-about-detail-q > form {
+    font-size: 14px;
+    margin: 86px 0 100px 248px;
+    line-height: 40px;
+}
+
+.rw-about-detail-q h3 {
+    color: #000;
+    font-size: 22px;
+}
+
+.rw-about-detail-q .form-group {
+    margin: 0 0 13px;
+}
+
+.rw-about-detail-q label {
+    display: inline-block;
+    width: 96px;
+}
+
+.rw-about-detail-q input,
+.rw-about-detail-q textarea {
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(157, 157, 157, .2) inset;
+    height: 20px;
+    line-height: 20px;
+    padding: 9px 10px;
+    width: 318px;
+}
+
+.rw-about-detail-q textarea {
+    height: 120px;
+    line-height: 1.5;
+    max-height: 150px;
+    max-width: 400px;
+    vertical-align: top;
+}
+
+.rw-about-detail-q .tips {
+    color: #999;
+    text-align: right;
+    width: 440px;
+}
+
+.rw-about-detail-q button {
+    background-color: #cd0000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 0 0 270px;
+    text-align: center;
+    width: 170px;
+}

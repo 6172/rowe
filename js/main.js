@@ -107,7 +107,7 @@ $(document).ready(function() {
     $('.toggle-nav').children('.on').find('.toggle-trigger').trigger('click');
 });
 
-// 普通tab页切换
+// 普通 tab 页切换，适合一页只有一个 tab
 $(document).ready(function() {
     var nav = $('.tab-nav').children();
     var content = $('.tab-content').children();
@@ -118,7 +118,64 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {});
+// ajax 表单
+$(document).ready(function() {
+    var autoValidate = false;
+    if(document.body.style.transition !== undefined ||
+        document.body.style.WebkitTransition !== undefined ||
+        document.body.style.MozTransition !== undefined ||
+        document.body.style.msTransition !== undefined) {
+        autoValidate = true;
+    };
+
+    function submitForm(form) {
+        var data = form.serializeArray(),
+            url = form.data('action');
+        $.ajax({
+            method : 'POST',
+            data : data,
+            url : url,
+            timeout : 5000
+        }).done(function() {
+            alert('提交成功，感谢反馈');
+            form
+                .find('input')
+                .val('')
+                .end()
+                .find('textarea')
+                .val('');
+        }).fail(function() {
+            alert('提交失败，请重试');
+        });
+    }
+
+    function validateForm(form) {
+        var requiredField = form.find('[required]'),
+            validate = true;
+        requiredField.each(function() {
+            var field = $(this);
+            if(field.val().replace(/\s/g, '') === '') {
+                field.val('').focus();
+                validate = false;
+                alert('这行您还没填写哟');
+            }
+        });
+        return validate;
+    }
+
+    $('.ajax-form').on('submit', function(e) {
+        e.preventDefault();
+        var form = $(this);
+        if(autoValidate) {
+            submitForm(form);
+        }else {
+            if(validateForm(form)) {
+                submitForm(form);
+            }
+        }
+    });
+});
+
 $(document).ready(function() {});
 $(document).ready(function() {});
 $(document).ready(function() {});
