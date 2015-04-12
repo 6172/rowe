@@ -58,7 +58,9 @@
     padding: 0 0 11px;
 }
 
-.rw-about-detail p {
+.rw-about-detail p,
+.rw-about-detail ul,
+.rw-about-detail ol {
     font-size: 14px;
     line-height: 25px;
     margin: 0 0 25px;

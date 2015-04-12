@@ -25,11 +25,21 @@ $(document).ready(function() {
         subMenu && subMenu.height(0);
         treeItem.removeClass('on'); 
     });
+});
 
+// 实时搜索
+$(document).ready(function() {
+    // TOTO realtime search tips
     var searchBtn = $('#search-btn');
     var searchClose = $('#search-close');
     var searchPanel = searchBtn.next();
     var onSearch = false;
+    var form = $('#search-form');
+    var formResult = $('#search-form-result');
+
+    function createItemHtml(text, link) {
+        return '<li><a href="' + link + '" class="ellipsis">' + text + '</a></li>';
+    }
 
     searchBtn.on('click', function(evt) {
         evt.stopPropagation();
@@ -47,6 +57,11 @@ $(document).ready(function() {
         if(onSearch && !searchPanel[0].contains(evt.target)) {
             searchPanel.height(0);
         }
+    });
+
+    form.on('submit', function(e) {
+        e.preventDefault();
+
     });
 });
 
@@ -82,7 +97,7 @@ $(document).ready(function() {
     });
 });
 
-// 可展开侧边导航
+// 可展开侧边导航（只允许一个展开）
 $(document).ready(function() {
     var lastItem = null;
     $('.toggle-nav').on('click', '.toggle-trigger', function(e) {
@@ -176,8 +191,9 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {});
-$(document).ready(function() {});
-$(document).ready(function() {});
-$(document).ready(function() {});
-$(document).ready(function() {});
+// 自由展开的栏目
+$(document).ready(function() {
+    $('.toogle-item').on('click', function() {
+        $(this).toggleClass('on').next().slideToggle();
+    });
+});

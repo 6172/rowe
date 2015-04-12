@@ -239,6 +239,31 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 34px;
 }
 
+.rw-search-result {
+    background-color: #fff;
+    display: none;
+    left: -782px;
+    line-height: 40px;
+    position: absolute;
+    top: 55px;
+    width: 693px;
+    z-index: 5;
+}
+
+.rw-search-result a {
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #484848;
+    display: block;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.rw-search-result a:hover {
+    background-color: #f9f9f9;
+}
+
 .rw-nav-panel {
     background-color: #fff;
     height: 0;

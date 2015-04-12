@@ -103,7 +103,9 @@
     text-align: justify;
 }
 
-.rw-news-detail-main-content p {
+.rw-news-detail-main-content p,
+.rw-news-detail-main-content ul,
+.rw-news-detail-main-content ol {
     color: #6d6d6d;
     font-size: 13px;
     line-height: 22px;

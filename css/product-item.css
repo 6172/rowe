@@ -112,14 +112,14 @@
     font-size: 14px;
     height: 45px;
     line-height: 45px;
-    margin: 0 16px 0 0;
+    margin: 0 0 0 16px;
     position: relative;
     text-align: center;
     width: 228px;
     z-index: 5;
 }
 
-.rw-product-item-nav li:last-child {
+.rw-product-item-nav li:first-child {
     margin: 0;
 }
 
@@ -164,7 +164,11 @@
 }
 
 .rw-product-item-info-general p,
-.rw-product-item-info-feture p {
+.rw-product-item-info-general ul,
+.rw-product-item-info-general ol,
+.rw-product-item-info-feture p,
+.rw-product-item-info-feture ul,
+.rw-product-item-info-feture ol {
     font-size: 13px;
     line-height: 24px;
     margin: 0 0 25px;
