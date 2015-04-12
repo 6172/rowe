@@ -82,6 +82,43 @@ $(document).ready(function() {
     });
 });
 
+// 可展开侧边导航
+$(document).ready(function() {
+    var lastItem = null;
+    $('.toggle-nav').on('click', '.toggle-trigger', function(e) {
+        e.preventDefault();
+        if(this === lastItem) {
+            $(this)
+                .next('.toggle-sub-nav')
+                .slideToggle();
+        }else {
+            $(this)
+                .next('.toggle-sub-nav')
+                .slideDown()
+                .end()
+                .parent()
+                .siblings()
+                .find('.toggle-sub-nav')
+                .slideUp();
+        }
+        lastItem = this;
+    });
+
+    $('.toggle-nav').children('.on').find('.toggle-trigger').trigger('click');
+});
+
+// 普通tab页切换
+$(document).ready(function() {
+    var nav = $('.tab-nav').children();
+    var content = $('.tab-content').children();
+    nav.on('click', function() {
+        var index = $(this).index();
+        nav.removeClass('on').eq(index).addClass('on');
+        content.removeClass('on').eq(index).addClass('on');
+    });
+});
+
+$(document).ready(function() {});
 $(document).ready(function() {});
 $(document).ready(function() {});
 $(document).ready(function() {});
