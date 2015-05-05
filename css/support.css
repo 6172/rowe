@@ -125,9 +125,43 @@
 .rw-support-content p,
 .rw-support-content ul,
 .rw-support-content ol {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 28px;
     margin: 0 0 25px;
+}
+
+.rw-support-content h1,
+.rw-support-content h2,
+.rw-support-content h3,
+.rw-support-content h4,
+.rw-support-content h5,
+.rw-support-content h6 {
+    font-weight: bold;
+    margin: 0 0 25px;
+}
+
+.rw-support-content h1 {
+    font-size: 22px;
+}
+
+.rw-support-content h2 {
+    font-size: 20px;
+}
+
+.rw-support-content h3 {
+    font-size: 18px;
+}
+
+.rw-support-content h4 {
+    font-size: 16px;
+}
+
+.rw-support-content h5 {
+    font-size: 14px;
+}
+
+.rw-support-content h6 {
+    font-size: 13px;
 }
 
 .rw-support-content img {

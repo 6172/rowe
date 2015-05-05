@@ -75,6 +75,8 @@
 .rw-about-detail-aboutus > .contact {
     font-size: 14px;
     line-height: 28px;
+    overflow: hidden;
+    width: 252px;
 }
 
 .rw-about-detail-aboutus > .contact > dd {

@@ -69,10 +69,16 @@
     box-shadow: 0 3px 5px rgba(124, 124, 124, .4);
 }
 
+.rw-product-list-item > figure {
+    font-size: 0;
+    height: 258px;
+    line-height: 258px;
+}
+
 .rw-product-list-item img {
     background-color: #f7f8f9;
-    height: 258px;
-    width: 228px;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
 .rw-product-list-item h3 {
