@@ -1,30 +1,30 @@
 // 导航特效
 $(document).ready(function() {
-    var nav = $('#nav');
-    var panel = $('#rw-nav-panel');
-    var subMenu, treeItem;
+    // var nav = $('#nav');
+    // var panel = $('#rw-nav-panel');
+    // var subMenu, treeItem;
 
-    nav.on('mouseover', '.has-sub-tree', function() {
-        var subMenuItem, itemHeight;
-        treeItem = $(this);
-        subMenu = treeItem.find('.rw-sub-nav');
-        subMenuItem = subMenu.find('ul');
-        itemHeight = subMenuItem.height();
-        subMenu.height(itemHeight);
-        nav.addClass('nav-on');
-        treeItem.addClass('on').siblings().removeClass('on');
-        panel.height(itemHeight + 140);
-    });
+    // nav.on('mouseover', '.has-sub-tree', function() {
+    //     var subMenuItem, itemHeight;
+    //     treeItem = $(this);
+    //     subMenu = treeItem.find('.rw-sub-nav');
+    //     subMenuItem = subMenu.find('ul');
+    //     itemHeight = subMenuItem.height();
+    //     subMenu.height(itemHeight);
+    //     nav.addClass('nav-on');
+    //     treeItem.addClass('on').siblings().removeClass('on');
+    //     panel.height(itemHeight + 140);
+    // });
 
-    panel.on('mouseout', function(evt) {
-        var relatedTarget = $(evt.relatedTarget);
-        if(!relatedTarget.hasClass('has-sub-tree') && !relatedTarget.parent().hasClass('has-sub-tree')) {
-            nav.removeClass('nav-on');
-            panel.height(0);
-        }
-        subMenu && subMenu.height(0);
-        treeItem.removeClass('on'); 
-    });
+    // panel.on('mouseout', function(evt) {
+    //     var relatedTarget = $(evt.relatedTarget);
+    //     if(!relatedTarget.hasClass('has-sub-tree') && !relatedTarget.parent().hasClass('has-sub-tree')) {
+    //         nav.removeClass('nav-on');
+    //         panel.height(0);
+    //     }
+    //     subMenu && subMenu.height(0);
+    //     treeItem.removeClass('on'); 
+    // });
 });
 
 // 实时搜索

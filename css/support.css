@@ -64,6 +64,13 @@
     margin: 0 0 0 10px;
 }
 
+.rw-support-thumb {
+    background: url(../images/support-map.jpg) no-repeat 0 0;
+    height: 410px;
+    padding: 10px 0 20px;
+    width: 700px;
+}
+
 .rw-support-download-table {
     font-size: 14px;
     line-height: 35px;
