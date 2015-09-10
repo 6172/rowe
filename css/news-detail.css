@@ -15,30 +15,8 @@
 }
 
 .rw-news-detail-side {
-    padding: 52px 0;
+    padding: 140px 0;
     width: 200px;
-}
-
-.rw-news-detail-time,
-.rw-news-detail-share {
-    font-size: 13px;
-    line-height: 20px;
-    padding: 9px 0 15px;
-    text-align: right;
-}
-
-.rw-news-detail-share {
-    border-top: 1px solid #e7e7e7;
-}
-
-.rw-news-detail-time > dt,
-.rw-news-detail-share > dt {
-    color: #313131;
-}
-
-.rw-news-detail-time > dt,
-.rw-news-detail-share > dt {
-    color: #585858;
 }
 
 .rw-news-detail-nav {
