@@ -359,3 +359,15 @@
 #video-close:hover {
     color: #333;
 }
+
+.rw-view-news {
+    background-color: #e4e4e4;
+    color: #000;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+}
+
+.rw-view-news a {
+    color: #08a4e5;
+}
