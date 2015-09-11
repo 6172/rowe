@@ -1,32 +1,3 @@
-// 导航特效
-$(document).ready(function() {
-    // var nav = $('#nav');
-    // var panel = $('#rw-nav-panel');
-    // var subMenu, treeItem;
-
-    // nav.on('mouseover', '.has-sub-tree', function() {
-    //     var subMenuItem, itemHeight;
-    //     treeItem = $(this);
-    //     subMenu = treeItem.find('.rw-sub-nav');
-    //     subMenuItem = subMenu.find('ul');
-    //     itemHeight = subMenuItem.height();
-    //     subMenu.height(itemHeight);
-    //     nav.addClass('nav-on');
-    //     treeItem.addClass('on').siblings().removeClass('on');
-    //     panel.height(itemHeight + 140);
-    // });
-
-    // panel.on('mouseout', function(evt) {
-    //     var relatedTarget = $(evt.relatedTarget);
-    //     if(!relatedTarget.hasClass('has-sub-tree') && !relatedTarget.parent().hasClass('has-sub-tree')) {
-    //         nav.removeClass('nav-on');
-    //         panel.height(0);
-    //     }
-    //     subMenu && subMenu.height(0);
-    //     treeItem.removeClass('on'); 
-    // });
-});
-
 // 实时搜索
 $(document).ready(function() {
     // TOTO realtime search tips
@@ -94,6 +65,25 @@ $(document).ready(function() {
         figures.stop().animate({
             left : -current * 1 + '00%'
         }, 500);
+    });
+});
+
+// 首页视频
+$(document).ready(function() {
+    var videoList = $('#rw-view-video-list');
+    var playerPanel = $('#video-player');
+    var frame = playerPanel.find('iframe');
+    var playerCloser = $('#video-close');
+
+    videoList.on('click', '.rw-view-video-item-link', function(evt) {
+        evt.preventDefault();
+        frame.attr('src', this.href);
+        playerPanel.fadeIn();
+    });
+
+    playerCloser.on('click', function() {
+        playerPanel.fadeOut();
+        frame.attr('src', '');
     });
 });
 

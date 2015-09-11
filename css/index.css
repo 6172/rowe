@@ -221,108 +221,141 @@
     background-color: #eee;
 }
 
-.rw-view-news {
+.rw-view-videos {
     border-top: 1px solid #d2d2d2;
     padding: 44px 0 80px;
 }
 
-.rw-view-news-articles > a {
+.rw-view-video-list {
+    margin: 26px 0 0;
+}
+
+.rw-view-video-item {
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+.rw-view-video-item:first-child {
+    margin: 0;
+}
+
+.rw-view-video-item-link {
+    background-color: #eee;
     display: block;
-    height: 120px;
+    height: 117px;
     overflow: hidden;
     position: relative;
+    width: 184px;
+}
+
+.rw-view-video-item-link > img {
+    max-width: 100%;
+}
+
+.rw-view-video-item-link:before,
+.rw-view-video-item-link:after {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    －webkit-transition: all .4s ease 0s;
+    －ms-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
     width: 100%;
 }
 
-.rw-view-news-articles img {
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
+.rw-view-video-item-link:before {
+    background: url(../images/video.png) no-repeat 50% 50%;
+    display: none;
 }
 
-@media screen and (min-height: 1px) {
-    .rw-view-news-articles img {
-        bottom: auto;
-        left: auto;
-        position: relative;
-        right: auto;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+.rw-view-video-item-link:hover:before {
+    display: block;
+}
+
+.rw-view-video-item-link:after {
+    background: url(../images/o-100-8.png) repeat 0 0;
+}
+
+.rw-view-video-item-link:hover:after {
+    background: none;
+}
+
+@media screen and (min-width: 1px) {
+    .rw-view-video-item-link:before {
+        display: block;
+        opacity: 0;
+    }
+
+    .rw-view-video-item-link:hover:before {
+        opacity: 1;
+    }
+
+    .rw-view-video-item-link:after {
+        background-color: rgba(100, 100, 100, .8);
+    }
+
+    .rw-view-video-item-link:hover:after {
+        background-color: rgba(100, 100, 100, 0);
     }
 }
 
-.rw-view-news-articles > h3 {
-    font-weight: bold;
-}
-
-.rw-view-news-articles > time {
-    display: block;
+.rw-view-video-item > p {
+    border-color: #e5e5e5;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    color: #333;
     font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
 }
 
-.rw-view-news-articles > p {
-    color: #999;
+#video-player {
+    background: url(../images/o-2.png) repeat 0 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
-.rw-view-news-head > a {
-    height: 240px;
+@media screen and (min-width: 1px) {
+    #video-player {
+        background: rgba(0, 0, 0, .2);
+    }
 }
 
-.rw-view-news-head {
-    padding: 52px 0 0;
-    width: 484px;
+#video-player > iframe {
+    background-color: #000;
+    height: 360px;
+    left: 50%;
+    margin: -210px 0 0 -320px;
+    position: absolute;
+    top: 50%;
+    width: 640px;
 }
 
-.rw-view-news-head > h3 {
-    font-size: 20px;
-    line-height: 58px;
+#video-close {
+    background-color: #fff;
+    border-radius: 25px;
+    color: #666;
+    font-family: Tahoma;
+    font-size: 34px;
+    height: 50px;
+    left: 50%;
+    line-height: 48px;
+    margin: -250px 0 0 310px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 50%;
+    width: 50px;
 }
 
-.rw-view-news-head > time {
-    height: 38px;
+#video-close:hover {
+    color: #333;
 }
-
-.rw-view-news-head > p {
-    line-height: 24px;
-    text-align: justify;
-}
-
-.rw-view-news-other {
-    padding: 52px 0 0;
-    width: 514px;
-}
-
-.rw-view-news-other > .rw-view-news-articles {
-    float: left;
-    margin: 0 0 50px 27px;
-    width: 230px;
-}
-
-.rw-view-news-other img {
-    background-color: #eee;
-    height: 120px;
-    width: 230px;
-}
-
-.rw-view-news-other h3,
-.rw-view-news-other time {
-    font-size: 14px;
-    line-height: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
