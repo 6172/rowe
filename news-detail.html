@@ -11,8 +11,8 @@
     </head>
     <body class="news-list">
         <header class="rw-header">
-            <div class="rw-container">
-                <nav class="rw-navigation clearfix" id="nav">
+            <nav class="rw-navigation clearfix" id="nav">
+                <div class="rw-container">
                     <h1 class="rw-logo f-l">
                         <a href="index.html">瑞网中国</a>
                     </h1>
@@ -27,7 +27,6 @@
                         </div>
                         <ul class="rw-search-result" id="search-form-result"></ul>
                     </div>
-                    <div class="rw-nav-panel" id="rw-nav-panel"></div>
                     <ul class="rw-nav">
                         <li class="rw-nav-item has-sub-tree">
                             <a href="">产品</a>
@@ -65,28 +64,32 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="rw-nav-item">
+                        <li class="rw-nav-item has-sub-tree">
                             <a href="">关于瑞网</a>
+                            <div class="rw-sub-nav">
+                                <ul>
+                                    <li><a href="">关于我们</a></li>
+                                    <li><a href="">客户案例</a></li>
+                                    <li><a href="">用户咨询</a></li>
+                                    <li><a href="">隐私条例</a></li>
+                                    <li><a href="">使用条款</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
-                </nav>
-                <hgroup class="rw-title">
-                    <h2>新闻</h2>
-                    <h3>News</h3>
-                </hgroup>
-                <div class="rw-header-bg">
-                    <img src="images/news.jpg" class="bg-img">
                 </div>
+            </nav>
+            <hgroup class="rw-title">
+                <h2>新闻</h2>
+                <h3>News</h3>
+            </hgroup>
+            <div class="rw-header-bg">
+                <img src="images/news.jpg" class="bg-img">
             </div>
         </header>
         <div class="rw-body">
             <div class="rw-container clearfix">
                 <aside class="rw-news-detail-side f-l">
-                    <dl class="rw-news-detail-time">
-                        <dt>日期</dt>
-                        <dd><time>2015年4月12日</time></dd>
-                    </dl>
-                    <dl class="rw-news-detail-share"></dl>
                     <ul class="rw-news-detail-nav">
                         <li><a class="back" href="javascript:history.go(-1)">返回</a></li>
                         <li><a class="prev" href="">上一篇</a></li>
