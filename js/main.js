@@ -66,10 +66,8 @@ $(document).ready(function() {
             left : -current * 1 + '00%'
         }, 500);
     });
-});
-
-// 首页视频
-$(document).ready(function() {
+}).ready(function() {
+    // 首页视频
     var videoList = $('#rw-view-video-list');
     var playerPanel = $('#video-player');
     var frame = playerPanel.find('iframe');
@@ -85,6 +83,23 @@ $(document).ready(function() {
         playerPanel.fadeOut();
         frame.attr('src', '');
     });
+}).ready(function() {
+    // 首页新闻滚动
+    var rollBar = $('#rw-news-roller');
+    var timer;
+    function roll() {
+        timer = setTimeout(function() {
+            var zero = rollBar.children().eq(0);
+            zero.animate({
+                marginTop : -36
+            }, 500, function() {
+                rollBar.append(zero);
+                zero.css('margin-top', 0);
+                roll();
+            });
+        }, 5000);
+    }
+    roll();
 });
 
 // 可展开侧边导航（只允许一个展开）

@@ -368,6 +368,24 @@
     line-height: 36px;
 }
 
+.rw-view-news h3,
+.rw-view-news ul {
+    float: left;
+}
+
+.rw-view-news h3 {
+    width: 70px;
+}
+
+.rw-view-news ul {
+    height: 36px;
+    overflow: hidden;
+}
+
+.rw-view-news li {
+    padding: 0 20px 0 10px;
+}
+
 .rw-view-news a {
     color: #08a4e5;
 }
