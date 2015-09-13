@@ -389,3 +389,7 @@
 .rw-view-news a {
     color: #08a4e5;
 }
+
+.rw-view-news h3 > a {
+    color: #000;
+}
