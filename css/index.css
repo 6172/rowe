@@ -275,7 +275,7 @@
 }
 
 .rw-view-video-item-link:after {
-    background: url(../images/o-100-8.png) repeat 0 0;
+    background: url(../images/o-24-4.png) repeat 0 0;
 }
 
 .rw-view-video-item-link:hover:after {
@@ -293,11 +293,11 @@
     }
 
     .rw-view-video-item-link:after {
-        background-color: rgba(100, 100, 100, .8);
+        background: rgba(24, 24, 24, .4);
     }
 
     .rw-view-video-item-link:hover:after {
-        background-color: rgba(100, 100, 100, 0);
+        background: rgba(24, 24, 24, 0);
     }
 }
 
