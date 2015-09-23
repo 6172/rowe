@@ -152,11 +152,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .rw-logo {
-    background: url(../images/icons.png) no-repeat 0 0;
+    background: url(../images/logo-s.png) no-repeat 0 0;
     height: 80px;
     position: relative;
     text-indent: -9999em;
-    width: 60px;
+    width: 88px;
     z-index: 3;
 }
 
@@ -275,6 +275,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .rw-nav {
     line-height: 80px;
+    margin: 0 0 0 140px;
 }
 
 .rw-nav-item {
